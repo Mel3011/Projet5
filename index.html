@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <title>Nina Carducci, photographe professionnelle</title>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site internet de la photographe professionelle Nina Carducci"/>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +13,32 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Nina Carducci, photographe professionnelle"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/"/>
+    <meta property="og:image" content="http://example.com/image.jpg"/>
+    <meta property="og:description" content="Site internet de la photographe professionelle Nina Carducci"/>
 
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci, photographe professionnelle",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Votre adresse",
+          "addressLocality": "Votre ville",
+          "postalCode": "Votre code postal",
+          "addressCountry": "Votre pays"
+        },
+        "telephone": "Votre numéro de téléphone",
+        "url": "URL de votre site",
+        "image": "URL de votre logo ou image",
+        "description": "Description de votre entreprise"
+      }
+    </script>
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -23,9 +49,9 @@
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
   </head>
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
-      <div class="nav">
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -35,16 +61,17 @@
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              title="Lien instagram"
               target="_blank"
               ><img
                 src="assets/images/instagram.webp"
-                alt="Pictogramme instagram"
+                alt="Pictogramme instagram" width="20px" height="20px"
             /></a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div id="header">
+      </nav>
+    </header>
+    <section id="header">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -85,6 +112,7 @@
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Photographie d'un concert"
+              itemprop="image"
             />
           </div>
           <div class="carousel-item">
@@ -114,18 +142,18 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
+    </section>
+    <section id="about">
       <div class="picture left">
         <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" />
       </div>
-      <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+      <article id="about-me">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <p class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </p>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -136,10 +164,10 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-      </div>
-    </div>
-    <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      </article>
+    </section>
+    <section id="gallery">
+      <h2 class="title">Portfolio</h3>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -198,24 +226,24 @@
           />
         </div>
       </div>
-      <div class="quote">
+      <article class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <p class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </p>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
-      </div>
+      </article>
     </div>
-    <div id="services">
-      <h3 class="title">Mes services</h3>
+    <section id="services">
+      <h2 class="title">Mes services</h2>
       <div class="container">
-        <div class="service">
+        <article class="service">
           <div class="service__description">
             <h3>Shooting photo</h3>
             <p>
@@ -228,8 +256,8 @@
             <h4>350€/demi journée</h4>
             <span>Matériel, déplacement inclus</span>
           </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
           <div class="service__description">
             <h3>Retouches</h3>
             <p>
@@ -241,8 +269,8 @@
             <h4>50€/photo</h4>
             <span>2 AR par photo</span>
           </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
           <div class="service__description">
             <h3>Album photos</h3>
             <p>
@@ -254,34 +282,34 @@
             <h4>400€ album A4</h4>
             <span>30 pages recto/verso</span>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
-    <div class="quote">
+    </section>
+    <section class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <p class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </p>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
-    </div>
-    <div id="contact">
+    </section>
+    <footer id="contact">
       <div class="container">
         <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="#" method="post">
-            <label class="name">Nom</label>
+            <label for="nom" class="name">Nom</label>
             <input type="text" name="nom" id="nom" />
-            <label class="email">Email</label>
+            <label for="email" class="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label class="message">Message</label>
+            <label for="message" class="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -294,10 +322,10 @@
         <div class="picture right">
           <img
             src="./assets/images/camera.webp"
-            alt="Image d'un appareil photo"
+            alt="Image d'un appareil photo" 
           />
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
