@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <title>Nina Carducci, photographe professionnelle</title>
   <head>
+    <title>Nina Carducci, photographe professionnelle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Site internet de la photographe professionelle Nina Carducci"/>
+    <meta
+      name="description"
+      content="Site internet de la photographe professionelle Nina Carducci"
+    />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,12 +16,23 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
     <!-- Open Graph data -->
-    <meta property="og:title" content="Nina Carducci, photographe professionnelle"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://www.example.com/"/>
-    <meta property="og:image" content="http://example.com/image.jpg"/>
-    <meta property="og:description" content="Site internet de la photographe professionelle Nina Carducci"/>
+    <meta
+      property="og:title"
+      content="Nina Carducci, photographe professionnelle"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nina-carducci.github.io/" />
+    <meta
+      property="og:image"
+      content="https://nina-carducci.github.io/assets/images/nina.png"
+    />
+    <meta
+      property="og:description"
+      content="Site internet de la photographe professionelle Nina Carducci"
+    />
 
     <script type="application/ld+json">
       {
@@ -27,18 +41,37 @@
         "name": "Nina Carducci, photographe professionnelle",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Votre adresse",
-          "addressLocality": "Votre ville",
-          "postalCode": "Votre code postal",
-          "addressCountry": "Votre pays"
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "France"
         },
-        "telephone": "Votre numéro de téléphone",
-        "url": "URL de votre site",
-        "image": "URL de votre logo ou image",
-        "description": "Description de votre entreprise"
+        "telephone": "05 56 67 78 89",
+        "url": "https://nina-carducci.github.io/",
+        "image": "https://nina-carducci.github.io/assets/images/nina.png",
+        "description": "Nina Carducci, photographe professionnelle",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "05 56 67 78 89",
+            "contactType": "customer service",
+            "availableLanguage": ["French"],
+            "availableHours": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "10:00",
+              "closes": "19:00"
+            }
+          }
+        ]
       }
     </script>
-    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -65,7 +98,9 @@
               target="_blank"
               ><img
                 src="assets/images/instagram.webp"
-                alt="Pictogramme instagram" width="20px" height="20px"
+                alt="Pictogramme instagram"
+                width="20"
+                height="20"
             /></a>
           </li>
         </ul>
@@ -112,7 +147,6 @@
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Photographie d'un concert"
-              itemprop="image"
             />
           </div>
           <div class="carousel-item">
@@ -167,7 +201,7 @@
       </article>
     </section>
     <section id="gallery">
-      <h2 class="title">Portfolio</h3>
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -177,48 +211,56 @@
             alt="Photo d'un concert"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
             alt="Photo d'un cadre supérieur en entreprise"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
             alt="Photographie d'une réunion en entreprise"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
             alt="Photographie d'un couple lors d'un mariage"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
             alt="Portrait d'un homme"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
             alt="Photo d'un couple marié"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
             alt="Portrait d'une femme"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
             alt="Photo d'un chanteur lors d'un concert"
           />
           <img
+            loading="lazy"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
@@ -239,7 +281,7 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </article>
-    </div>
+    </section>
     <section id="services">
       <h2 class="title">Mes services</h2>
       <div class="container">
@@ -322,7 +364,7 @@
         <div class="picture right">
           <img
             src="./assets/images/camera.webp"
-            alt="Image d'un appareil photo" 
+            alt="Image d'un appareil photo"
           />
         </div>
       </div>
